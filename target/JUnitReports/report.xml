@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="20.721">
+<testcase classname="Feature to test Contact page functionality" name="Check mandatory field errors are gone after entering values" time="5.108">
+<system-out><![CDATA[Given browser is open.......................................................passed
+When user enters Planit Demo website URL....................................passed
+Then user is redirected to Home Page........................................passed
+And user clicks on contact menu.............................................passed
+When user clicks on submit button...........................................passed
+Then mandatory field errors are shown on the page...........................passed
+And user populates correct data in all mandatory fields.....................passed
+Then all errors are gone....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Contact page functionality" name="Check Successful submission on contact page" time="2.954">
+<system-out><![CDATA[Given browser is open.......................................................passed
+When user enters Planit Demo website URL....................................passed
+Then user is redirected to Home Page........................................passed
+And user clicks on contact menu.............................................passed
+When user populates correct data in all mandatory fields....................passed
+And user clicks on submit button............................................passed
+Then successful submission message is received..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Contact page functionality" name="Check Mandatory field errors" time="6.419">
+<system-out><![CDATA[Given browser is open.......................................................passed
+When user enters Planit Demo website URL....................................passed
+Then user is redirected to Home Page........................................passed
+And user clicks on contact menu.............................................passed
+When user enters incorrect data in all mandatory fields.....................passed
+Then mandatory field errors are shown on the page...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Contact page functionality" name="Check the added items in the cart from shop page" time="6.062">
+<system-out><![CDATA[Given browser is open.......................................................passed
+When user enters Planit Demo website URL....................................passed
+Then user is redirected to Home Page........................................passed
+And user clicks on shop menu................................................passed
+When user adds Funny Cow item twice times...................................passed
+And user adds Fluffy Bunny item once........................................passed
+And user clicks the cart menu...............................................passed
+Then all the added items are displayed in the cart..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

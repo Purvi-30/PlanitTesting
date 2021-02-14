@@ -1,0 +1,473 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User is on Planit testing demo website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1617000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2535000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters Planit Demo website URL",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_enters_planit_demo_website_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is redirected to Home Page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_is_redirected_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T14:57:40.842Z",
+        "line": 11,
+        "name": "Check mandatory field errors are gone after entering values",
+        "description": "",
+        "id": "feature-to-test-contact-page-functionality;check-mandatory-field-errors-are-gone-after-entering-values",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on contact menu",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_contact_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "mandatory field errors are shown on the page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.mandatory_field_errors_are_shown_on_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 288000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user populates correct data in all mandatory fields",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_populates_correct_data_in_all_mandatory_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "all errors are gone.",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.all_errors_are_gone()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase1"
+          },
+          {
+            "name": "@ContactPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is on Planit testing demo website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1078000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1292000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters Planit Demo website URL",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_enters_planit_demo_website_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is redirected to Home Page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_is_redirected_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T14:57:45.964Z",
+        "line": 19,
+        "name": "Check Successful submission on contact page",
+        "description": "",
+        "id": "feature-to-test-contact-page-functionality;check-successful-submission-on-contact-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on contact menu",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_contact_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user populates correct data in all mandatory fields",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_populates_correct_data_in_all_mandatory_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "successful submission message is received",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.successful_submission_message_is_received()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase2"
+          },
+          {
+            "name": "@ContactPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is on Planit testing demo website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1087000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4267000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters Planit Demo website URL",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_enters_planit_demo_website_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is redirected to Home Page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_is_redirected_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T14:57:48.923Z",
+        "line": 26,
+        "name": "Check Mandatory field errors",
+        "description": "",
+        "id": "feature-to-test-contact-page-functionality;check-mandatory-field-errors",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 327000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user clicks on contact menu",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_contact_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 451000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enters incorrect data in all mandatory fields",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_enters_incorrect_data_in_all_mandatory_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "mandatory field errors are shown on the page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.mandatory_field_errors_are_shown_on_the_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase3"
+          },
+          {
+            "name": "@ContactPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is on Planit testing demo website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1859000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2648000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters Planit Demo website URL",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_enters_planit_demo_website_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is redirected to Home Page",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_is_redirected_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T14:57:55.351Z",
+        "line": 32,
+        "name": "Check the added items in the cart from shop page",
+        "description": "",
+        "id": "feature-to-test-contact-page-functionality;check-the-added-items-in-the-cart-from-shop-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 226000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user clicks on shop menu",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_on_shop_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user adds Funny Cow item twice times",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_adds_funny_cow_item_twice_times()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user adds Fluffy Bunny item once",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_adds_fluffy_bunny_item_once()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user clicks the cart menu",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.user_clicks_the_cart_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 497000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "all the added items are displayed in the cart",
+            "match": {
+              "location": "StepDefinition.PlanitDemo.all_the_added_items_are_displayed_in_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase4"
+          },
+          {
+            "name": "@ShopPage"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test Contact page functionality",
+    "description": "",
+    "id": "feature-to-test-contact-page-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/PlanitDemo.feature",
+    "tags": []
+  }
+]
