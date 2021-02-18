@@ -1,9 +1,10 @@
 package StepDefinition;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import PageObjectModel.*;
+import dataProvider.ConfigFileReader;
 import io.cucumber.java.en.*;
 
 public class PlanitDemo {
@@ -12,22 +13,25 @@ public class PlanitDemo {
 	Shop shop;
 	Home home;
 	Contact contact;
+	ConfigFileReader configFileReader;
 
 	@Given("browser is open")
 	public void browser_is_open() {
-		String projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver",projectPath+"/src/test/resources/Driver/chromedriver.exe");
+		configFileReader= new ConfigFileReader();
+		System.setProperty("webdriver.chrome.driver",configFileReader.getDriverPath());
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 
 	@When("user enters Planit Demo website URL")
 	public void user_enters_planit_demo_website_url() {
-				driver.navigate().to("http://jupiter.cloud.planittesting.com");
+		driver.get(configFileReader.getApplicationUrl());
 	}
 
 	@Then("user is redirected to Home Page")
 	public void user_is_redirected_to_home_page() {
 		home = new Home(driver);
+		driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 		home.isDisplayed();
 	}
 
@@ -73,6 +77,7 @@ public class PlanitDemo {
 	@And("user clicks on shop menu")
 	public void user_clicks_on_shop_menu() {
 		home.clickOnShop();
+		driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 	}
 
 	@When("user adds Funny Cow item twice times")
@@ -88,6 +93,7 @@ public class PlanitDemo {
 
 	@And("user clicks the cart menu")
 	public void user_clicks_the_cart_menu() {
+		driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 		shop.clickCartMenu();
 	}
 
@@ -95,5 +101,10 @@ public class PlanitDemo {
 	public void all_the_added_items_are_displayed_in_the_cart() {
 		Cart cart = new Cart(driver);
 		cart.itemDisplayed();
+	}
+
+	@And("browser is closed")
+	public void browser_is_closed() {
+		driver.close();
 	}
 }
