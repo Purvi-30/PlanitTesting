@@ -18,7 +18,6 @@ public class Cart {
 		this.driver = driver;
 		
 	}
-	
 
 public void itemDisplayed() {
 	WebDriverWait wait = new WebDriverWait(driver,30);
